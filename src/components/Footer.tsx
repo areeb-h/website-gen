@@ -110,6 +110,30 @@ const FooterLinks = ({ title, links }: { title: string; links: string[] }) => (
     </motion.div>
 );
 
+// const ContactInfo = () => (
+//     <div>
+//         <h3 className="text-xs sm:text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
+//         <ul className="mt-3 sm:mt-4 space-y-2 sm:space-y-4">
+//             <li className="flex items-start">
+//                 <MapPin className="flex-shrink-0 h-4 w-4 sm:h-6 sm:w-6 text-gray-400 mt-1" aria-hidden="true" />
+//                 <span className="ml-2 sm:ml-3 text-xs sm:text-base text-gray-500">
+//                     Ma. Perihelion, Ameenee Magu, Male&apos;, Maldives
+//                 </span>
+//             </li>
+//             <li className="flex items-center">
+//                 <Phone className="flex-shrink-0 h-4 w-4 sm:h-6 sm:w-6 text-gray-400" aria-hidden="true" />
+//                 <span className="ml-2 sm:ml-3 text-xs sm:text-base text-gray-500">(960) 925 925 4</span>
+//             </li>
+//             <li className="flex items-center">
+//                 <Mail className="flex-shrink-0 h-4 w-4 sm:h-6 sm:w-6 text-gray-400" aria-hidden="true" />
+//                 <span className="ml-2 sm:ml-3 text-xs sm:text-base text-gray-500 break-words">
+//                     connect@ocelopticnetwork.com
+//                 </span>
+//             </li>
+//         </ul>
+//     </div>
+// );
+
 const ContactInfo = () => (
     <div>
         <h3 className="text-xs sm:text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact</h3>
@@ -126,7 +150,7 @@ const ContactInfo = () => (
             </li>
             <li className="flex items-center">
                 <Mail className="flex-shrink-0 h-4 w-4 sm:h-6 sm:w-6 text-gray-400" aria-hidden="true" />
-                <span className="ml-2 sm:ml-3 text-xs sm:text-base text-gray-500 break-words">
+                <span className="ml-2 sm:ml-3 text-xs sm:text-base text-gray-500 break-all sm:break-normal">
                     connect@ocelopticnetwork.com
                 </span>
             </li>
