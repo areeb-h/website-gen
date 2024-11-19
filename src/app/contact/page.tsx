@@ -1,32 +1,34 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Send, MapPin, Phone, Mail, Check } from 'lucide-react';
-import PageHeader from '@/components/PageHeader';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Send, MapPin, Phone, Mail, Check } from "lucide-react";
+import PageHeader from "@/components/PageHeader";
 
 const LetsTalk = () => {
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        message: ''
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        message: "",
     });
     const [submitted, setSubmitted] = useState(false);
 
-    const handleChange = (e) => {
+    // Add type for handleChange
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
-        setFormData(prev => ({
+        setFormData((prev) => ({
             ...prev,
-            [name]: value
+            [name]: value,
         }));
     };
 
-    const handleSubmit = (e) => {
+    // Add type for handleSubmit
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // Simulate form submission
-        console.log('Form submitted:', formData);
+        console.log("Form submitted:", formData);
         setSubmitted(true);
     };
 
@@ -51,7 +53,8 @@ const LetsTalk = () => {
                             <>
                                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Start Your Project Journey</h2>
                                 <p className="text-gray-600 mb-8">
-                                    Share your project details, and our team will craft a custom digital solution that elevates your brand.
+                                    Share your project details, and our team will craft a custom digital solution that
+                                    elevates your brand.
                                 </p>
                                 <form onSubmit={handleSubmit} className="space-y-5">
                                     <div className="grid md:grid-cols-2 gap-5">
@@ -105,7 +108,8 @@ const LetsTalk = () => {
                                         type="submit"
                                         className="w-full flex items-center justify-center px-6 py-4 bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition-colors group"
                                     >
-                                        <Send className="mr-2 w-5 h-5 group-hover:rotate-6 transition-transform" /> Send Message
+                                        <Send className="mr-2 w-5 h-5 group-hover:rotate-6 transition-transform" /> Send
+                                        Message
                                     </button>
                                 </form>
                             </>
@@ -142,11 +146,15 @@ const LetsTalk = () => {
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <Check className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" />
-                                    <span>Innovative solutions driven by cutting-edge technology and creative insights</span>
+                                    <span>
+                                        Innovative solutions driven by cutting-edge technology and creative insights
+                                    </span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <Check className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" />
-                                    <span>Collaborative approach with transparent communication and measurable results</span>
+                                    <span>
+                                        Collaborative approach with transparent communication and measurable results
+                                    </span>
                                 </li>
                             </ul>
                         </div>
