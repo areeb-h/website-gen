@@ -113,7 +113,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile menu button remains the same */}
-                    <div className='flex justify-center items-center p-1 bg-white rounded-full '>
+                    <div className='flex justify-center items-center /p-1 bg-white rounded-full '>
 
                         <motion.button
                             whileHover={{ scale: 1.05 }}
