@@ -18,11 +18,17 @@ export default function Navbar() {
     const pathname = usePathname()
 
     useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > window.innerHeight * 0.8)
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
+        const handleScroll = () => {
+            if (typeof window !== 'undefined') {
+                setScrolled(window.scrollY > window.innerHeight * 0.8)
+            }
+        }
 
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', handleScroll)
+            return () => window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
     const isHomePage = pathname === '/'
 
     return (

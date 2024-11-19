@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hulhumalé Academic Centre",
-  description: "The first private educational institution in Hulhumalé, providing quality education since 2007.",
+  title: "Oceloptic Networks Pvt Ltd",
+  description: "We are a creative strategy firm dedicated to elevating businesses through innovative design, strategic branding, and cutting-edge digital solutions that drive meaningful growth and impact.",
 };
 
 export default function RootLayout({

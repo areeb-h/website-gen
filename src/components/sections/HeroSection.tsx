@@ -1,12 +1,29 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Rocket, PenTool, Star, Zap } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const HeroSection = () => {
+    const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const updateWindowSize = () => {
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                })
+            }
+
+            updateWindowSize()
+            window.addEventListener('resize', updateWindowSize)
+            return () => window.removeEventListener('resize', updateWindowSize)
+        }
+    }, [])
+
     return (
         <section className="relative overflow-hidden min-h-screen flex items-center bg-black">
             {/* Background Image */}
@@ -36,22 +53,26 @@ const HeroSection = () => {
                         key={i}
                         initial={{
                             opacity: 0,
-                            x: Math.random() * window.innerWidth,
-                            y: Math.random() * window.innerHeight,
+                            x: windowSize.width ? Math.random() * windowSize.width : 0,
+                            y: windowSize.height ? Math.random() * windowSize.height : 0,
                             scale: Math.random() * 2
                         }}
                         animate={{
                             opacity: [0, 1, 0],
-                            x: [
-                                Math.random() * window.innerWidth,
-                                Math.random() * window.innerWidth,
-                                Math.random() * window.innerWidth
-                            ],
-                            y: [
-                                Math.random() * window.innerHeight,
-                                Math.random() * window.innerHeight,
-                                Math.random() * window.innerHeight
-                            ]
+                            x: windowSize.width
+                                ? [
+                                    Math.random() * windowSize.width,
+                                    Math.random() * windowSize.width,
+                                    Math.random() * windowSize.width
+                                ]
+                                : [0, 0, 0],
+                            y: windowSize.height
+                                ? [
+                                    Math.random() * windowSize.height,
+                                    Math.random() * windowSize.height,
+                                    Math.random() * windowSize.height
+                                ]
+                                : [0, 0, 0]
                         }}
                         transition={{
                             duration: Math.random() * 100 + 5,
