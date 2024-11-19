@@ -12,7 +12,7 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle, bgGradient = 'from-blue-500 to-teal-500' }) => {
     return (
         <motion.div
-            className={`relative bg-gradient-to-r ${bgGradient} text-white py-16 sm:py-24 overflow-hidden`}
+            className={`relative bg-gradient-to-r ${bgGradient} text-white py-16 sm:py-32 sm:pt-36 overflow-hidden`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}

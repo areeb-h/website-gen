@@ -113,18 +113,22 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile menu button remains the same */}
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className={`md:hidden mr-4 rounded-full p-2 transition-all duration-200 ${scrolled
-                            ? 'text-gray-600 hover:bg-gray-100'
-                            : (isHomePage ? 'text-white hover:bg-white/10' : 'text-gray-600 hover:bg-gray-100')
-                            }`}
-                        aria-label="Toggle menu"
-                    >
-                        {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                    </motion.button>
+                    <div className='flex justify-center items-center p-1 bg-white rounded-full '>
+
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            className={`md:hidden /mr-4 rounded-full p-2 transition-all duration-200 ${scrolled
+                                ? 'text-gray-600 hover:bg-gray-100'
+                                : (isHomePage ? 'text-white hover:bg-white/10' : 'text-gray-600 hover:bg-gray-100')
+                                }`}
+                            aria-label="Toggle menu"
+                        >
+                            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                        </motion.button>
+                    </div>
+
                 </motion.nav>
 
                 {/* Mobile menu remains largely the same */}

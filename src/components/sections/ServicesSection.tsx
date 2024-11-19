@@ -46,7 +46,7 @@ const WhatWeOffer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4">
-                        Our <span className="text-emerald-600">Services</span>
+                        Our <span className="/text-emerald-600 text-orange-600">Services</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Comprehensive solutions designed to elevate your brand and drive meaningful business transformation.

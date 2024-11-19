@@ -7,14 +7,14 @@ const CTASection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className="max-w-3xl mx-auto">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Ready to Transform Your <span className="text-emerald-400">Business?</span>
+                        Ready to Transform Your <span className="/text-emerald-400 text-orange-400">Business?</span>
                     </h2>
                     <p className="text-xl text-gray-300 mb-12">
                         Let&apos;s discuss how Oceloptic Network can help you unlock your brand&apos;s full potential with our innovative strategies and creative solutions.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="inline-flex items-center px-10 py-4 bg-emerald-500 text-white rounded-lg font-bold hover:bg-emerald-600 transition-colors">
+                        <button className="inline-flex items-center px-10 py-4 bg-orange-500 /bg-emerald-500 text-white rounded-lg font-bold hover:bg-orange-600 /hover:bg-emerald-600 transition-colors">
                             Book a Consultation
                             <ArrowRight className="ml-2 w-5 h-5" />
                         </button>
