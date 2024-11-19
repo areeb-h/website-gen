@@ -55,17 +55,17 @@ export default function Navbar() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={`${scrolled
-                                ? 'bg-gradient-to-r from-gray-800 to-gray-900 text-white'
+                                ? 'bg-gradient-to-r from-orange-400 to-red-400 /from-gray-800 /to-gray-900 text-white'
                                 : (isHomePage
-                                    ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white'
-                                    : 'bg-gradient-to-r from-gray-800 to-gray-900 text-white')
+                                    ? 'bg-gradient-to-r from-orange-400 to-red-400  /from-purple-600 /to-pink-500 text-white'
+                                    : 'bg-gradient-to-r from-orange-400 to-red-400 /from-gray-800 /to-gray-900 text-white')
                                 } px-4 py-2 rounded-full`}
                         >
-                            <span className="text-xl font-bold">Oceloptic</span>
+                            <span className="text-xl font-bold">Oceloptic Network</span>
                         </motion.div>
                     </Link>
 
-                    <div className={`hidden md:flex items-center space-x-1 border-white/10 p-2 rounded-full transition-all duration-300 ${scrolled
+                    <div className={`hidden md:flex items-center space-x-2 border-white/10 p-2 rounded-full transition-all duration-300 ${scrolled
                         ? 'bg-white shadow-xl border'
                         : (isHomePage
                             ? 'backdrop-blur-md bg-transparent border'
@@ -89,10 +89,10 @@ export default function Navbar() {
                                                 : 'text-gray-600 hover:bg-gray-100'))
                                         }`}
                                 >
-                                    <link.icon className={`w-4 h-4 mr-2 ${scrolled
+                                    {/* <link.icon className={`w-4 h-4 mr-2 ${scrolled
                                         ? 'text-gray-600'
                                         : (isHomePage ? 'text-white/70' : 'text-gray-600')}`}
-                                    />
+                                    /> */}
                                     {link.name}
                                 </Link>
                             </motion.div>
@@ -100,14 +100,14 @@ export default function Navbar() {
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                             <Link
                                 href="/contact"
-                                className={`mx-2 px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${scrolled
+                                className={`/mx-2 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${scrolled
                                     ? 'bg-gradient-to-r from-gray-900 to-gray-800 text-white shadow-xl'
                                     : (isHomePage
-                                        ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-2xl hover:shadow-xl'
+                                        ? 'bg-gradient-to-r from-gray-50 to-gray-100 /from-purple-600 /to-pink-500 text-gray-800 /text-white shadow-2xl hover:shadow-xl'
                                         : 'bg-gradient-to-r from-gray-900 to-gray-800 text-white shadow-xl')
                                     }`}
                             >
-                                Let&apos;s Create!
+                                Let&apos;s Talk!
                             </Link>
                         </motion.div>
                     </div>
@@ -168,10 +168,10 @@ export default function Navbar() {
                                             }`}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        <link.icon className={`h-5 w-5 ${scrolled
+                                        {/* <link.icon className={`h-5 w-5 ${scrolled
                                             ? 'text-gray-600'
                                             : (isHomePage ? 'text-white/70' : 'text-gray-600')}`}
-                                        />
+                                        /> */}
                                         <span>{link.name}</span>
                                     </Link>
                                 ))}
@@ -180,13 +180,13 @@ export default function Navbar() {
                                     className={`flex items-center space-x-2 px-4 py-3 text-sm font-medium transition-all duration-200 ${scrolled
                                         ? 'bg-gray-900 text-white'
                                         : (isHomePage
-                                            ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white'
+                                            ? 'bg-gradient-to-r from-black to-gray-900 /from-purple-600 /to-pink-500 text-white'
                                             : 'bg-gray-900 text-white')
                                         }`}
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     <ChevronRight className="h-5 w-5" />
-                                    <span>Let&apos;s Create!</span>
+                                    <span>Let&apos;s Talk!</span>
                                 </Link>
                             </motion.div>
                         </motion.div>
