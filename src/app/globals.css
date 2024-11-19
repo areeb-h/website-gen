@@ -122,3 +122,15 @@ html {
 .balanced-text {
   text-wrap: balance;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header, nav {
+  width: 100%; /* Ensure it spans the viewport */
+  margin: 0 auto;
+  padding: 0;
+}
