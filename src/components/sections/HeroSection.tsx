@@ -152,7 +152,7 @@ const HeroSection = () => {
                     </motion.div>
 
                     {/* Performance Metrics - Responsive Grid */}
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.7 }}
@@ -175,7 +175,7 @@ const HeroSection = () => {
                                 <div className="text-xs sm:text-sm text-white/50">{stat.text}</div>
                             </motion.div>
                         ))}
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
         </section>
