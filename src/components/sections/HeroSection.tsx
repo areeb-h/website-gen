@@ -156,7 +156,7 @@ const HeroSection = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.7 }}
-                        className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 max-w-4xl mx-auto text-center px-4"
+                        className="grid grid-cols-3 /sm:grid-cols-3 gap-4 sm:gap-8 max-w-4xl mx-auto text-center px-4"
                     >
                         {[
                             { icon: Star, number: "3+", text: "Strategic Projects" },
