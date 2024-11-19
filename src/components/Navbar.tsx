@@ -119,10 +119,7 @@ export default function Navbar() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className={`md:hidden /mr-4 rounded-full p-2 transition-all duration-200 ${scrolled
-                                ? 'text-gray-600 hover:bg-gray-100'
-                                : (isHomePage ? 'text-white hover:bg-white/10' : 'text-gray-600 hover:bg-gray-100')
-                                }`}
+                            className={`md:hidden /mr-4 rounded-full p-2 transition-all duration-200 text-gray-600 hover:bg-gray-100`}
                             aria-label="Toggle menu"
                         >
                             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -196,7 +193,7 @@ export default function Navbar() {
                         </motion.div>
                     )}
                 </AnimatePresence>
-            </div>
-        </motion.header>
+            </div >
+        </motion.header >
     )
 }
