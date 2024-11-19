@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { Rocket, PenTool, Star, Zap } from 'lucide-react'
+// import { Rocket, PenTool, Star, Zap } from 'lucide-react'
+import { Rocket, PenTool } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
