@@ -23,9 +23,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  experimental: {
-    outputStandalone: true,
-  },
 };
 
 export default nextConfig;
