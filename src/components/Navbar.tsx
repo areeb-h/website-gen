@@ -181,7 +181,7 @@ export default function Navbar() {
                                     className={`flex items-center space-x-2 px-4 py-3 text-sm font-medium transition-all duration-200 ${scrolled
                                         ? 'bg-gray-900 text-white'
                                         : (isHomePage
-                                            ? 'bg-gradient-to-r from-black to-gray-900 /from-purple-600 /to-pink-500 text-white'
+                                            ? 'bg-gradient-to-r from-white to-gray-100 /from-purple-600 /to-pink-500 text-black'
                                             : 'bg-gray-900 text-white')
                                         }`}
                                     onClick={() => setIsMenuOpen(false)}
