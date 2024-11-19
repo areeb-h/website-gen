@@ -32,11 +32,25 @@ const About = () => {
     ];
 
     return (
-        <div className="bg-gray-50 min-h-screen">
-            <PageHeader
+        <div className="bg-gray-50 min-h-screen pt-24">
+            {/* <PageHeader
                 title="About Our Agency"
                 subtitle="Driving Digital Innovation Through Strategic Marketing Solutions"
-            />
+            /> */}
+
+            <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="container mx-auto px-4 py-16  text-center"
+            >
+                <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-500 mb-6">
+                    About Our Agency
+                </h1>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Driving Digital Innovation Through Strategic Marketing Solutions
+                </p>
+            </motion.div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-16">
                 <div className="grid md:grid-cols-2 gap-12 items-center bg-white rounded-3xl p-12 shadow-lg">
