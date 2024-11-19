@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import PageHeader from '@/components/PageHeader';
+// import PageHeader from '@/components/PageHeader';
 import { motion } from 'framer-motion';
 import {
     Target, Users, Globe, Rocket
