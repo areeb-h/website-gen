@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
-    PieChart, Globe, Target,
+    PieChart, Globe,
     BarChart2, Award, ArrowRight, CheckCircle
 } from 'lucide-react';
 
