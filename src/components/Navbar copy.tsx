@@ -151,7 +151,7 @@ export default function Navbar() {
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         <ChevronRight className="h-4 w-4" />
-                                        <span>Let's Talk!</span>
+                                        <span>Let&apos;s Talk!</span>
                                     </Link>
                                 </motion.div>
                             </motion.div>

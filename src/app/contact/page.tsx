@@ -114,7 +114,7 @@ const LetsTalk = () => {
                                 <Check className="mx-auto w-20 h-20 text-emerald-500 mb-6" />
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Message Received!</h3>
                                 <p className="text-gray-600 mb-6">
-                                    We've got your message. Our team will review and reach out soon.
+                                    We&apos;ve got your message. Our team will review and reach out soon.
                                 </p>
                                 <button
                                     onClick={() => setSubmitted(false)}

@@ -161,7 +161,7 @@ export default function Projects() {
                     <CheckCircle className="w-16 h-16 mx-auto mb-6 text-white/80" />
                     <h2 className="text-4xl font-bold mb-6 relative z-10">Ready to Transform Your Digital Landscape?</h2>
                     <p className="text-xl max-w-3xl mx-auto mb-8 relative z-10">
-                        Every project is a unique journey of innovation, strategy, and measurable impact. Let's write your success story together.
+                        Every project is a unique journey of innovation, strategy, and measurable impact. Let&apos;s write your success story together.
                     </p>
                     <motion.button
                         whileHover={{ scale: 1.05 }}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, PenTool, Monitor, Globe, Award, ArrowUpRight } from 'lucide-react';
+import { Zap, PenTool, Monitor, Globe, ArrowUpRight } from 'lucide-react';
 
 const AboutSection = () => {
     return (

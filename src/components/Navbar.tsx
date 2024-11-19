@@ -101,7 +101,7 @@ export default function Navbar() {
                                         : 'bg-gradient-to-r from-gray-900 to-gray-800 text-white shadow-xl')
                                     }`}
                             >
-                                Let's Create!
+                                Let&apos;s Create!
                             </Link>
                         </motion.div>
                     </div>
@@ -180,7 +180,7 @@ export default function Navbar() {
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     <ChevronRight className="h-5 w-5" />
-                                    <span>Let's Create!</span>
+                                    <span>Let&apos;s Create!</span>
                                 </Link>
                             </motion.div>
                         </motion.div>

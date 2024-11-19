@@ -10,7 +10,7 @@ const CTASection = () => {
                         Ready to Transform Your <span className="text-emerald-400">Business?</span>
                     </h2>
                     <p className="text-xl text-gray-300 mb-12">
-                        Let's discuss how Oceloptic Network can help you unlock your brand's full potential with our innovative strategies and creative solutions.
+                        Let&apos;s discuss how Oceloptic Network can help you unlock your brand&apos;s full potential with our innovative strategies and creative solutions.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
