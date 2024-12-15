@@ -4,7 +4,7 @@ import React from 'react';
 // import PageHeader from '@/components/PageHeader';
 import { motion } from 'framer-motion';
 import {
-    Target, Users, Globe, Rocket
+    Target, User, Globe, Rocket
 } from 'lucide-react';
 
 const About = () => {
@@ -84,7 +84,7 @@ const About = () => {
                 </div>
 
                 <div className="text-center bg-white rounded-3xl p-16 shadow-lg">
-                    <h2 className="text-4xl font-bold mb-8 text-gray-900">Our Leadership Team</h2>
+                    <h2 className="text-4xl font-bold mb-8 text-gray-900">Our Leader</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         {teamMembers.map((member, index) => (
                             <motion.div
@@ -94,7 +94,7 @@ const About = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <Users className="w-16 h-16 text-blue-500 mx-auto mb-6" />
+                                <User className="w-16 h-16 text-blue-500 mx-auto mb-6" />
                                 <h4 className="text-2xl font-bold mb-2">{member.name}</h4>
                                 <p className="text-blue-600 mb-4">{member.role}</p>
                                 <p className="text-gray-600">{member.description}</p>
