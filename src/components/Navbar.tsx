@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronRight, Zap, Lightbulb, BarChart } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navLinks = [
     { name: 'Home', href: '/', icon: Zap },
@@ -44,14 +45,14 @@ export default function Navbar() {
                     layout
                 >
                     <Link href="/"
-                        className={`flex justify-between items-center border-white/10 /p-2 rounded-full transition-all duration-300 ${scrolled
+                        className={`flex justify-between items-center border-white/10 p-1 rounded-[25px] transition-all duration-300 ${scrolled
                             ? 'bg-white shadow-xl border'
                             : (isHomePage
                                 ? 'backdrop-blur-md bg-transparent border'
                                 : 'bg-white shadow-xl border')
                             }`}
                     >
-                        <motion.div
+                        {/* <motion.div
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={`${scrolled
@@ -62,6 +63,18 @@ export default function Navbar() {
                                 } px-4 py-2 rounded-full`}
                         >
                             <span className="text-xl font-bold">Oceloptic Network</span>
+                        </motion.div> */}
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <Image
+                                src="/favicon.svg"
+                                alt="Oceloptic Network Logo"
+                                width={50}
+                                height={50}
+                                className="object-contain"
+                            />
                         </motion.div>
                     </Link>
 

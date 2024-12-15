@@ -3,9 +3,21 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import "./globals.css";
 
+// export const metadata: Metadata = {
+//   title: "Oceloptic Networks Pvt Ltd",
+//   description: "We are a creative strategy firm dedicated to elevating businesses through innovative design, strategic branding, and cutting-edge digital solutions that drive meaningful growth and impact.",
+// };
+
 export const metadata: Metadata = {
-  title: "Oceloptic Networks Pvt Ltd",
-  description: "We are a creative strategy firm dedicated to elevating businesses through innovative design, strategic branding, and cutting-edge digital solutions that drive meaningful growth and impact.",
+  title: {
+    default: "Oceloptic Network - Elevate Your Digital Potential",
+    template: "%s | Oceloptic Network",
+  },
+  description: "Oceloptic Network provides cutting-edge marketing solutions to help your brand grow and succeed.",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/apple-touch-icon.png", // Replace with your actual favicon paths
+  }
 };
 
 export default function RootLayout({

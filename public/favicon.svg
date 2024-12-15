@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 952.38 952.38">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="117.16" y1="835.22" x2="835.22" y2="117.16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f38c21"/>
+      <stop offset=".41" stop-color="#ef6a2b"/>
+      <stop offset="1" stop-color="#e75043"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="80"/>
+      <feFlood flood-color="#000" flood-opacity=".3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="244.2" y1="645.1" x2="705.71" y2="183.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00b4af"/>
+      <stop offset="1" stop-color="#00e4c7"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <rect class="cls-2" x="0" y="0" width="952.38" height="952.38" rx="400" ry="400"/>
+    <g class="cls-1">
+      <path class="cls-3" d="M761.95,487.52c0,69.2-28.05,131.86-73.4,177.21-22.79,22.79-49.95,41.22-80.12,53.9-2.77,3.39-5.73,6.68-8.9,9.85l-35.32,35.32c-50.67,50.67-132.81,50.67-183.47,0l-35.32-35.32c-4.73-4.73-9.02-9.75-12.88-14.98-84.09-40.43-142.13-126.42-142.13-225.97,0-42.87,10.77-83.23,29.75-118.51-11.69-24.65-16.49-45.58-20-61.35-7.7-34.65-15.73-70.76,1.16-83.37,6.28-4.69,14.13-4.76,33.58-1.16,35.55,6.6,68.72,12.76,106.07,34.55,30.65-13.36,64.49-20.77,100.05-20.77h70.32c34.48,0,67.33,6.97,97.23,19.57,36.49-20.82,69.09-26.87,103.96-33.34,19.46-3.6,27.3-3.53,33.58,1.16,16.89,12.61,8.87,48.72,1.16,83.37-3.28,14.72-7.68,33.94-17.75,56.48,20.64,36.42,32.42,78.52,32.42,123.37Z"/>
+    </g>
+  </g>
+</svg>
