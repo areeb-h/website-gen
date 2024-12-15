@@ -10,15 +10,15 @@ import {
 const About = () => {
     const teamMembers = [
         {
-            name: "Akram Adeel",
+            name: "Akram Adeel Saeed",
             role: "Founder & Chief Executive Officer",
-            description: "With 15 years of digital marketing experience, Sarah leads our innovative approach to brand transformation."
+            description: "With 5 years of digital marketing experience, Akram leads our innovative approach to brand transformation."
         },
-        {
-            name: "Unknown",
-            role: "Head of Analytics",
-            description: "An expert who turns complex metrics into actionable marketing insights."
-        },
+        // {
+        //     name: "Unknown",
+        //     role: "Head of Analytics",
+        //     description: "An expert who turns complex metrics into actionable marketing insights."
+        // },
         // {
         //     name: "Unknown",
         //     role: "Head of Analytics",
