@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Oceloptic Network provides cutting-edge marketing solutions to help your brand grow and succeed.",
   icons: {
     icon: "/favicon.svg",
-    apple: "/apple-touch-icon.png", // Replace with your actual favicon paths
+    apple: "/favicon.svg", // Replace with your actual favicon paths
   }
 };
 
