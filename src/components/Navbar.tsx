@@ -45,7 +45,7 @@ export default function Navbar() {
                     layout
                 >
                     <Link href="/"
-                        className={`flex justify-between items-center border-white/10 p-1 rounded-[25px] transition-all duration-300 ${scrolled
+                        className={`flex justify-between items-center border-white/10 p-2 rounded-[27px] transition-all duration-300 ${scrolled
                             ? 'bg-white shadow-xl border'
                             : (isHomePage
                                 ? 'backdrop-blur-md bg-transparent border'
@@ -71,14 +71,14 @@ export default function Navbar() {
                             <Image
                                 src="/favicon.svg"
                                 alt="Oceloptic Network Logo"
-                                width={50}
-                                height={50}
+                                width={45}
+                                height={45}
                                 className="object-contain"
                             />
                         </motion.div>
                     </Link>
 
-                    <div className={`hidden md:flex items-center space-x-2 border-white/10 p-2 rounded-full transition-all duration-300 ${scrolled
+                    <div className={`hidden md:flex items-center space-x-2 border-white/10 p-2 rounded-[27px] /rounded-full transition-all duration-300 ${scrolled
                         ? 'bg-white shadow-xl border'
                         : (isHomePage
                             ? 'backdrop-blur-md bg-transparent border'
@@ -89,7 +89,7 @@ export default function Navbar() {
                             <motion.div key={link.href} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <Link
                                     href={link.href}
-                                    className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${scrolled
+                                    className={`flex items-center px-4 py-2 rounded-[17px] /rounded-full text-sm font-medium transition-all duration-200 ${scrolled
                                         ? (pathname === link.href
                                             ? 'bg-gray-100 text-gray-900'
                                             : 'text-gray-600 hover:bg-gray-100')
