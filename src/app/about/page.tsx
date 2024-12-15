@@ -129,3 +129,30 @@ const About = () => {
 };
 
 export default About;
+
+export const metadata = {
+    title: "About Us - Oceloptic Network",
+    description: "Learn about Oceloptic Network, our mission, vision, and the experts behind our innovative marketing solutions.",
+    openGraph: {
+        title: "About Us - Oceloptic Network",
+        description: "Meet the team driving innovation at Oceloptic Network and our commitment to empowering businesses.",
+        url: "https://oceloptic.com/about",
+        siteName: "Oceloptic Network",
+        images: [
+            {
+                url: "https://oceloptic.com/images/about-og-image.jpg", // Replace with your actual image URL
+                width: 800,
+                height: 600,
+                alt: "Oceloptic Network About Page",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Us - Oceloptic Network",
+        description: "Discover the story of Oceloptic Network and our passion for delivering results.",
+        images: ["https://oceloptic.com/images/about-og-image.jpg"], // Replace with your actual image URL
+    },
+};
