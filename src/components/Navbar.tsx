@@ -133,7 +133,7 @@ export default function Navbar() {
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         // className={`md:hidden /mr-4 bg-white/90 backdrop-blur-md rounded-full p-3  transition-all duration-200 text-gray-600 hover:bg-gray-100`}
-                        className={`flex justify-between items-center p-[17px] rounded-[27px] transition-all duration-300 ${scrolled
+                        className={`md:hidden flex justify-between items-center p-[17px] rounded-[27px] transition-all duration-300 ${scrolled
                             ? '/bg-white /shadow-xl backdrop-blur-md'
                             : (isHomePage
                                 ? 'backdrop-blur-md bg-transparent text-white/50'
