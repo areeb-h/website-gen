@@ -110,7 +110,7 @@ export default function Navbar() {
                                 </Link>
                             </motion.div>
                         ))}
-                        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                        {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                             <Link
                                 href="/contact"
                                 className={`/mx-2 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${scrolled
@@ -122,7 +122,7 @@ export default function Navbar() {
                             >
                                 Let&apos;s Talk!
                             </Link>
-                        </motion.div>
+                        </motion.div> */}
                     </div>
 
                     {/* Mobile menu button remains the same */}
@@ -195,7 +195,7 @@ export default function Navbar() {
                                         <span>{link.name}</span>
                                     </Link>
                                 ))}
-                                <Link
+                                {/* <Link
                                     href="/contact"
                                     className={`flex items-center space-x-2 px-4 py-3 text-sm font-medium transition-all duration-200 ${scrolled
                                         ? 'bg-gray-900 text-white'
@@ -207,7 +207,7 @@ export default function Navbar() {
                                 >
                                     <ChevronRight className="h-5 w-5" />
                                     <span>Let&apos;s Talk!</span>
-                                </Link>
+                                </Link> */}
                             </motion.div>
                         </motion.div>
                     )}
