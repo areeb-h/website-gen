@@ -22,7 +22,7 @@ const Footer = () => {
                                 href="mailto:connect@ocelopticnetwork.com"
                                 className="text-base md:text-xl border-b-4 font-bold text-orange-600 hover:text-orange-700 transition-colors"
                             >
-                                connect@ocelopticnetwork.com
+                                akram@ocelopticnetwork.com
                             </a>
                         </div>
                         <div>

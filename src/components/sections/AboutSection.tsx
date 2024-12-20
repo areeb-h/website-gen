@@ -56,7 +56,7 @@ const AboutSection = () => {
                         <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                             <img
                                 src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b"
-                                alt="Oceloptic Network Creative Studio"
+                                alt="Oceloptic Network"
                                 className="w-full h-full object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent" />
