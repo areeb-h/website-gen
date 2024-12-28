@@ -3,12 +3,13 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronRight, Zap, Lightbulb, BarChart } from 'lucide-react'
+import { Menu, X, ChevronRight, Zap, Lightbulb, BarChart, Camera } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const navLinks = [
     { name: 'Home', href: '/', icon: Zap },
+    { name: 'Papershoot', href: '/papershoot', icon: Camera },
     { name: 'Services', href: '/services', icon: Lightbulb },
     { name: 'About', href: '/about', icon: BarChart },
 ]
