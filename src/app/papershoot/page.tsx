@@ -118,6 +118,41 @@ export default function PapershootGallery() {
                 </p>
             </motion.div>
 
+            <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                className="container mx-auto px-4 mb-16"
+            >
+                <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Products</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    {galleryItems.map((item, index) => (
+                        <motion.div
+                            key={index}
+                            variants={itemVariants}
+                            className="bg-white rounded-lg shadow-lg overflow-hidden group"
+                        >
+                            <div className="relative aspect-square">
+                                <Image
+                                    src={item.image}
+                                    alt={item.title}
+                                    fill
+                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
+                                    <ArrowRightCircle className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                </div>
+                            </div>
+                            <div className="p-4">
+                                <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
+                                <p className="text-sm text-gray-500">{item.category}</p>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </motion.div>
+
+
             {/* Sample Images Carousel */}
             <div className="container mx-auto px-4 mb-16">
                 <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Captured with Papershoot</h2>
@@ -159,40 +194,6 @@ export default function PapershootGallery() {
                     </button>
                 </div>
             </div>
-
-            <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-                className="container mx-auto px-4 mb-16"
-            >
-                <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Our Products</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    {galleryItems.map((item, index) => (
-                        <motion.div
-                            key={index}
-                            variants={itemVariants}
-                            className="bg-white rounded-lg shadow-lg overflow-hidden group"
-                        >
-                            <div className="relative aspect-square">
-                                <Image
-                                    src={item.image}
-                                    alt={item.title}
-                                    fill
-                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                                    <ArrowRightCircle className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                </div>
-                            </div>
-                            <div className="p-4">
-                                <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
-                                <p className="text-sm text-gray-500">{item.category}</p>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
-            </motion.div>
 
             {/* <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
