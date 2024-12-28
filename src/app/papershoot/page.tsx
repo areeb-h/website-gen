@@ -12,79 +12,57 @@ export default function PapershootGallery() {
         {
             title: "Papershoot Whole Set",
             category: "Camera",
-            image: "/papershoot/products/1.jpeg?height=400&width=400",
+            image: "/papershoot/products/1.jpeg",
         },
         {
             title: "Papershoot Camera",
             category: "Camera",
-            image: "/papershoot/products/2.jpeg?height=400&width=400",
+            image: "/papershoot/products/2.jpeg",
         },
         {
             title: "Paper Case",
             category: "Accessory",
-            image: "/papershoot/products/3.jpeg?height=400&width=400",
+            image: "/papershoot/products/3.jpeg",
         },
         {
             title: "Paper Case",
             category: "Accessory",
-            image: "/papershoot/products/4.jpeg?height=400&width=400",
+            image: "/papershoot/products/4.jpeg",
         },
         {
             title: "Paper Case",
             category: "Accessory",
-            image: "/papershoot/products/5.jpeg?height=400&width=400",
+            image: "/papershoot/products/5.jpeg",
         },
         {
             title: "Paper Case",
             category: "Accessory",
-            image: "/papershoot/products/6.jpeg?height=400&width=400",
+            image: "/papershoot/products/6.jpeg",
         },
         {
             title: "Paper Case",
             category: "Accessory",
-            image: "/papershoot/products/7.jpeg?height=400&width=400",
+            image: "/papershoot/products/7.jpeg",
         },
         {
             title: "Paper Case",
             category: "Accessory",
-            image: "/papershoot/products/8.jpeg?height=400&width=400",
+            image: "/papershoot/products/8.jpeg",
         }
     ];
 
     const sampleImages = [
-        { url: "/papershoot/samples/1.jpeg?height=600&width=800", caption: "Urban Landscape" },
-        { url: "/papershoot/samples/3.jpeg?height=600&width=800", caption: "Street Photography" },
-        { url: "/papershoot/samples/4.jpeg?height=600&width=800", caption: "Architectural Details" },
-        { url: "/papershoot/samples/5.jpeg?height=600&width=800", caption: "Architectural Details" },
-        { url: "/papershoot/samples/6.jpeg?height=600&width=800", caption: "Cityscape" },
-        { url: "/papershoot/samples/8.jpeg?height=600&width=800", caption: "Architectural Details" },
-        { url: "/papershoot/samples/9.jpeg?height=600&width=800", caption: "Architectural Details" },
-        { url: "/papershoot/samples/10.jpeg?height=600&width=800", caption: "Sunset" },
-        { url: "/papershoot/samples/11.jpeg?height=600&width=800", caption: "Portrait" },
-        { url: "/papershoot/samples/12.jpeg?height=600&width=800", caption: "Macro Photography" },
+        { url: "/papershoot/samples/1.jpeg", caption: "Urban Landscape" },
+        { url: "/papershoot/samples/3.jpeg", caption: "Street Photography" },
+        { url: "/papershoot/samples/4.jpeg", caption: "Architectural Details" },
+        { url: "/papershoot/samples/5.jpeg", caption: "Architectural Details" },
+        { url: "/papershoot/samples/6.jpeg", caption: "Cityscape" },
+        { url: "/papershoot/samples/8.jpeg", caption: "Architectural Details" },
+        { url: "/papershoot/samples/9.jpeg", caption: "Architectural Details" },
+        { url: "/papershoot/samples/10.jpeg", caption: "Sunset" },
+        { url: "/papershoot/samples/11.jpeg", caption: "Portrait" },
+        { url: "/papershoot/samples/12.jpeg", caption: "Macro Photography" },
     ];
-
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1
-            }
-        }
-    };
-
-    const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                type: "spring",
-                stiffness: 300
-            }
-        }
-    };
 
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % sampleImages.length);
@@ -97,26 +75,21 @@ export default function PapershootGallery() {
     useEffect(() => {
         const timer = setInterval(() => {
             nextImage();
-        }, 5000); // Change image every 5 seconds
+        }, 5000);
 
         return () => clearInterval(timer);
     }, []);
 
     return (
-        <div className="bg-gray-100  py-16 min-h-screen">
-            <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="container mx-auto px-4 py-16 text-center"
-            >
+        <div className="bg-gray-100 py-16 min-h-screen">
+            <div className="container mx-auto px-4 py-16 text-center">
                 <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-pink-600 mb-6">
                     Papershoot Gallery
                 </h1>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
                     Explore our unique cameras, accessories, and the stunning photos they capture
                 </p>
-            </motion.div>
+            </div>
 
             {/* Sample Images Carousel */}
             <div className="container mx-auto px-4 mb-16">
@@ -160,18 +133,12 @@ export default function PapershootGallery() {
                 </div>
             </div>
 
-            <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-                className="container mx-auto px-4 mb-16"
-            >
+            <div className="container mx-auto px-4 mb-16">
                 <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Products</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     {galleryItems.map((item, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            variants={itemVariants}
                             className="bg-white rounded-lg shadow-lg overflow-hidden group"
                         >
                             <div className="relative aspect-square">
@@ -189,10 +156,10 @@ export default function PapershootGallery() {
                                 <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
                                 <p className="text-sm text-gray-500">{item.category}</p>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
-            </motion.div>
+            </div>
 
             {/* <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
